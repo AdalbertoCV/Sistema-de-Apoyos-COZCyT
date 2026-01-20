@@ -18,3 +18,5 @@ Ejecutar desde la raíz para levantar ambos frontend y backend, ejecutar desde e
 
 * docker compose build
 * docker compose up
+
+forked from: https://labsol.cozcyt.gob.mx/git/RafaUC/cosiap
