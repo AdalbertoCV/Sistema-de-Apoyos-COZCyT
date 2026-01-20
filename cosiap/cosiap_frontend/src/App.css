@@ -1,0 +1,1241 @@
+
+body {
+  background: var(--pagina-fondo);
+}
+
+.site-title{
+  color: var(--principal-mf);
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Estilo para los estados */
+.estado-label {
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  min-width: 100px;
+}
+
+.estado-aprobado {
+  background-color: rgb(126, 233, 126);
+}
+
+.estado-rechazado {
+  background-color: rgb(223, 91, 91);
+}
+
+.estado-pendiente {
+  background-color: rgb(109, 163, 216);
+  color: black; 
+}
+
+
+.button-ver{
+  background-color: grey;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-editar{
+  background-color: var(--principal-mf);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el card blanco */
+.white-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Estilos para las filas del formulario */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input[type="file"] {
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Estilos para secciones */
+.section {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Estilos para elementos */
+.element {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para opciones */
+.option {
+  background-color: #e9e9e9;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+/* Botones */
+.add-button {
+  background-color: #696d69;
+  color: white;
+  border: none;
+  padding: 12px 18px;  /* Más espacio para alargar el botón */
+  font-size: 14px;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  display: flex;  /* Alinear el contenido del botón */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;  /* Espacio entre el ícono y el texto */
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #5b5f5b;
+}
+
+.delete-button {
+  background-color: #f44336; 
+  color: white; 
+  border: none; 
+  padding: 8px 12px; 
+  font-size: 14px; 
+  border-radius: 16px; 
+  cursor: pointer; 
+  margin-top: 10px; 
+  margin-right: 10px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.delete-button i {
+  font-size: 16px; /* Ajusta el tamaño del ícono */
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+/* Botón de envío */
+.submit-button {
+  background-color: #4fb659;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-style: oblique;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #19d2b0;
+}
+
+/* Checkbox más pequeño */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.subtitle-text {
+  font-size: 20px;
+  color: var(--principal);
+}
+
+.subtitle-text-1 {
+  font-size: 18px;
+  color: var(--principal-mf);
+}
+
+.subtitle-text-2 {
+  font-size: 16px;
+  color: var(--principal-f);
+}
+
+/* Ajustar márgenes y tamaño del texto en etiquetas */
+.form-group label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px; 
+}
+
+.table-button-container {
+  display: flex;        
+  gap: 8px;                
+  justify-content: flex-start; 
+  flex-wrap: wrap;        
+  padding: 10px;          
+}
+
+.table-button-container button {
+  padding: 8px 12px;       
+  border-radius: 4px;    
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table-button-container button:hover {
+  background-color: #e0e0e0; 
+}
+
+.preview-image {
+  width: 100px;
+  height: 100px; 
+  object-fit: cover; 
+  border: 1px solid #ccc;
+  margin-top: 10px; 
+}
+
+.card {
+  border: 2px solid var(--principal); 
+  border-radius: 12px; 
+  margin: 20px 0; 
+  padding: 15px; 
+  background-color: #f1f1f1; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.card-header-section {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--principal-mf); /* Color verde oscuro para el título */
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--principal-mf); /* Línea inferior */
+  padding-bottom: 5px;
+}
+
+.card-header-element {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--principal-mf); /* Color verde oscuro para el título */
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--principal-mf); /* Línea inferior */
+  padding-bottom: 5px;
+}
+
+.card-header-option {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--principal-mf); /* Color verde oscuro para el título */
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--principal-mf); /* Línea inferior */
+  padding-bottom: 5px;
+}
+
+.card-body {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.6; /* Mejor legibilidad */
+}
+
+
+.element-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #adacac;
+}
+
+.element-card-header{
+  font-weight: bold;
+}
+
+.element-card-body{
+  padding: 10px;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.option-card {
+  margin-left: 20px;
+  border: 1px solid #bbb;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e9e9e9;
+}
+
+.form-row {
+  display: flex;
+  align-items: center; /* Alinea los elementos al centro verticalmente */
+  gap: 10px; /* Espacio entre los elementos */
+  height: auto; /* Asegúrate de que la altura del contenedor sea flexible */
+}
+
+.form-row label {
+  flex-shrink: 0; /* Evita que el label se encoja */
+}
+
+.form-row input {
+  flex: 1; /* Hace que el input ocupe el espacio disponible */
+}
+
+.element-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Para que el input esté a la izquierda y los botones a la derecha */
+  gap: 10px; /* Espacio entre el input y los botones */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.element-input {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+}
+
+.element-buttons {
+  display: flex;
+  gap: 5px; /* Espacio entre los botones */
+}
+
+.form-row input,
+.form-row button,
+.form-row label {
+  line-height: normal; /* Asegura que todos los elementos tengan una línea de texto coherente */
+  padding: 8px; /* Ajusta el padding para que sea igual en todos los elementos */
+  height: auto; /* Permite que los elementos ajusten su altura automáticamente */
+  font-size: 15px; /* Asegura que todos tengan el mismo tamaño de fuente */
+  font-style:normal;
+}
+
+.form-row input {
+  flex: 1; /* Hace que el input crezca según el espacio disponible */
+}
+
+/* Estilos generales para inputs */
+.input-class,
+.textarea-class,
+.select-class,
+.date-input-class,
+.time-input-class,
+.file-input-class {
+  width: 100%;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #555; /* Aumentamos el grosor y un color más oscuro */
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Efecto de enfoque (focus) para resaltarlos cuando el usuario interactúe */
+.input-class:focus,
+.textarea-class:focus,
+.select-class:focus,
+.date-input-class:focus,
+.time-input-class:focus,
+.file-input-class:focus {
+  border-color: #4CAF50; /* Cambia el color del borde al interactuar */
+  outline: none; /* Elimina el borde por defecto del navegador */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Efecto sutil de sombra verde */
+}
+
+/* Estilos para el textarea */
+.textarea-class {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Estilos para los select */
+.select-class {
+  height: 40px;
+  background-color: white;
+}
+
+/* Grupo de casillas: Mantener una distribución compacta */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacio entre las casillas */
+}
+
+/* Etiquetas de las casillas */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 16px; /* Tamaño de texto estándar */
+}
+
+/* Estilo personalizado para el checkbox */
+.checkbox-label input[type="checkbox"] {
+  width: 20px; /* Tamaño del checkbox */
+  height: 20px; /* Tamaño del checkbox */
+  margin-right: 5px; /* Espacio entre la casilla y el texto */
+  cursor: pointer;
+  border: 2px solid #333; /* Borde visible */
+  border-radius: 4px; /* Esquinas redondeadas */
+  appearance: none; /* Eliminar el estilo por defecto del navegador */
+  position: relative;
+}
+
+/* Estilo cuando está seleccionado */
+.checkbox-label input[type="checkbox"]:checked {
+  background-color: #333; /* Fondo oscuro cuando está seleccionado */
+}
+
+/* Agregar un pseudo-elemento para el 'checkmark' */
+.checkbox-label input[type="checkbox"]:checked::after {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Estilos para el input de archivo */
+.file-input-class {
+  cursor: pointer;
+}
+
+/* Estilos para la fecha y hora */
+.date-input-class,
+.time-input-class {
+  max-width: 200px;
+}
+
+/* Estilo para el separador */
+.separator-class {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 20px 0;
+}
+
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 45px;
+    margin-top: 20px;
+  }
+  
+  /* Sección de la imagen y título */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: 45px 45px 0 0;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(128, 128, 128, 0.6);
+    border-radius: 45px 45px 0 0;
+  }
+  
+  .image-text-container {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: var(--blanco);
+  }
+  
+  .image-text-container h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .image-text-container h4 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  .image-text-container p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .disabled-card {
+    opacity: 0.5;
+    background-color: #f0f0f0;
+  }
+  
+  .disabled-card input,
+  .disabled-card .button-container button:not(.add-button) {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* Estilos de las cards de las secciones */
+.section-card {
+  background-color: var(--blanco);
+  width: 90%;
+  margin: 20px auto; /* Centrar las cards */
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid var(--principal); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.section-card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--principal-mf);
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.subtitle{
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--principal-mf);
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  flex-direction: column;
+}
+
+/* Línea decorativa debajo del h3 */
+.section-card h3::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: var(--principal-mf);
+  bottom: 0;
+  left: 25%;
+  border-radius: 2px;
+}
+
+/* Contenedor de los elementos, para agruparlos en filas */
+.elementos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+  
+/* Cada elemento tiene su propia card */
+.element-card {
+  background-color: var(--gris-claro);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Efecto hover para dar más dinamismo */
+.element-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para el borde según el estado */
+.element-card.revisando {
+  border: 3px solid yellow;
+}
+
+.element-card.valido {
+  border: 3px solid green;
+}
+
+.element-card.invalido {
+  border: 3px solid red;
+}
+  
+  /* Estilos para los inputs dentro de las element-cards */
+  .element-card input,
+  .element-card textarea,
+  .element-card select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+  }
+  
+  /* Input específico para archivo */
+  .file-input-class {
+    background-color: var(--blanco);
+    cursor: pointer;
+  }
+  
+  /* Estilo de la card del monto solicitado */
+  .monto-card {
+    background-color: var(--blanco);
+    width: 90%;
+    border: 2px solid var(--principal); 
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .monto-card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--principal-mf);
+    text-align: center;
+  }
+  
+  .monto-card .input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+/* Botones de acción */
+.buttons-container {
+  display: flex;
+  justify-content: space-around; /* Un botón a la izquierda, otro a la derecha */
+  width: 100%; /* El contenedor ocupa todo el ancho disponible */
+  margin-top: 20px;
+  padding: 0 40px; /* Espacio a los lados del contenedor, ajusta según lo necesites */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.button, .submit-button {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  font-weight: bold;
+  font-style: normal;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+}
+
+.button:hover {
+    background-color: var(--secundario-f);
+}
+  
+.alert {
+    position: fixed;
+    top: 20px; /* Distancia desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    padding: 15px;
+    color: white;
+    width: calc(100% - 40px); /* Ajustar el ancho */
+    max-width: 600px; /* Ancho máximo */
+    text-align: center;
+    z-index: 1000; 
+    border-radius: 5px;
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.success {
+    background-color: #19a81e; /* Verde para éxito */
+}
+
+.error {
+    background-color: #f44336; /* Rojo para error */
+}
+
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #955e3d; /* Color de fondo */
+  color: white; /* Color del texto */
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+.download-button:active {
+  background-color: #3e8e41; /* Color de fondo al hacer clic */
+}
+
+.download-button:focus {
+  outline: none; /* Elimina el borde de enfoque */
+}
+
+.view-document-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4f6ebc; /* Color de fondo */
+  color: white; /* Color del texto */
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.info-container {
+  border: 1px solid #e0e0e0; /* Borde suave */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px; /* Relleno interior */
+  background-color: #f9f9f9; /* Fondo claro */
+  margin-bottom: 20px; /* Separación con otros elementos */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  text-align: center;
+}
+
+.info-container p {
+  margin: 8px 0; /* Margen entre los párrafos */
+}
+
+.info-container strong {
+  color: #333; /* Color fuerte para los títulos */
+}
+
+/* Borde dependiendo del estado */
+.border-green {
+  border: 4px solid rgb(19, 183, 19);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.border-green:hover {
+  box-shadow: 0 0 10px rgba(19, 183, 19, 0.5);
+}
+
+.border-yellow {
+  border: 4px solid rgb(221, 221, 111);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.border-yellow:hover {
+  box-shadow: 0 0 10px rgba(221, 221, 111, 0.5);
+}
+
+.border-red {
+  border: 4px solid rgb(206, 71, 71);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.border-red:hover {
+  box-shadow: 0 0 10px rgba(206, 71, 71, 0.5);
+}
+
+/* Contenedor de los inputs con borde */
+.element-container {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px; /* Mayor radio para bordes más suaves */
+  background-color: #f9f9f9; /* Color de fondo suave */
+  transition: background-color 0.3s;
+}
+
+.element-container:hover {
+  background-color: #f1f1f1; /* Color de fondo más claro al pasar el ratón */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .element-container {
+    padding: 15px; /* Más espacio en pantallas pequeñas */
+  }
+}
+
+
+/* Otros estilos de inputs */
+.input-class,
+.textarea-class,
+.select-class,
+.file-input-class,
+.date-input-class,
+.time-input-class {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.required-text {
+  color: red;
+  font-size: 0.8em;
+}
+
+.table-container {
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+}
+
+thead tr {
+  background-color: var(--principal-c); /* Rojo claro */
+  color: white;
+  font-weight: bold;
+}
+
+thead th {
+  padding: 12px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+tbody tr {
+  background-color: #e8e8e8;
+  border-bottom: 1px solid #d0d0d0;
+  transition: background-color 0.2s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+tbody tr:hover {
+  background-color: #cfcfcf;
+}
+
+td {
+  padding: 10px;
+}
+
+/* Contenedor del input de búsqueda */
+.search-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+/* Estilo del input */
+.search-input {
+  flex: 1;
+  border: none;
+  background: none;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+  border-radius: 25px 0 0 25px;
+}
+
+/* Placeholder personalizado */
+.search-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Estilo del botón de búsqueda */
+.search-btn {
+  border: none;
+  background-color: #938c8c;
+  color: white;
+  padding: 9px 20px;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #555;
+}
+
+
+
+.table-container {
+  overflow-x: auto; 
+  max-width: 100%;  
+  margin-top: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap; 
+}
+
+.context-menu {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+  padding: 10px 0; /* Espacio vertical adicional */
+  z-index: 100;
+  min-width: 180px; /* Ancho mínimo para alineación adecuada */
+  animation: fadeIn 0.2s ease-in-out; /* Animación de entrada */
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  padding: 12px 16px; /* Espacio más generoso */
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s; /* Efecto suave al pasar el ratón */
+}
+
+.context-menu button:hover {
+  background-color: #939aa1; 
+  color: white; 
+  border-radius: 4px; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Aparece desde arriba */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Agrega estos estilos a tu archivo CSS */
+.confirm-delete-menu {
+  position: fixed; /* Cambiado a fixed para centrar en la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el menú */
+  background-color: white; /* Color de fondo */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  padding: 20px; /* Espaciado interno */
+  z-index: 1000; /* Asegúrate de que el menú se muestre por encima de otros elementos */
+  text-align: center; /* Centra el texto */
+}
+
+.confirm-delete-menu p {
+  margin: 0 0 20px; /* Margen debajo del texto */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.confirm-delete-menu button {
+  margin: 0 10px; /* Espaciado entre botones */
+  padding: 10px 15px; /* Espaciado interno en botones */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados en botones */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+.confirm-delete-menu button.cancel {
+  background-color: #ccc; /* Color gris para el botón de cancelar */
+  color: #333; /* Color de texto */
+}
+
+.confirm-delete-menu button.confirm {
+  background-color: #ff4d4d; /* Color rojo para el botón de confirmar */
+  color: white; /* Color de texto blanco */
+}
+
+.confirm-delete-menu button:hover {
+  opacity: 0.9; /* Efecto hover */
+}
+
+.user-icon-container {
+  position: relative; 
+  display: inline-block;
+}
+
+.user-card {
+  position: absolute; 
+  top: 200px;
+  left: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  z-index: 9999; 
+}
+
+.user-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.user-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+.button-users {
+  background-color: var(--principal-mf);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.toggle-switch .slider:active:before {
+  width: 22px;
+}
+
+.home-solicitante-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--principal-mc);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-admin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--principal-mc);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+  justify-content: center;
+}
+
+.title {
+  color: var(--principal-mf);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.home-ul {
+  list-style-type: disc; 
+  margin-top: 12px;
+  padding-left: 40px; 
+}
+
+.home-ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5; 
+}
+
+.start-button {
+  background-color: var(--principal-mf);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.home-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}

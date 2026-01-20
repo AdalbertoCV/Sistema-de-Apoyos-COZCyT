@@ -1,0 +1,57 @@
+:root {
+  /* =========================
+   Estilos Básicos del Sitio
+   ========================= */
+  --principal-mc: rgb(252, 226, 228);
+  --principal-c: rgb(245, 173, 171);
+  --principal: rgb(226, 116, 110);
+  --principal-f: rgb(187, 68, 51);
+  --principal-mf: rgb(120, 16, 5);
+
+  --secundario-mc: #e0e0e0;
+  --secundario-c: #c0c0c0;
+  --secundario: #a0a0a0;
+  --secundario-f: #808080;
+  --secundario-mf: #606060;
+
+  --texto-general: #676767;
+  --pagina-fondo: #eee5e5;
+
+  --exito-f: #8abc94;
+  --exito: #b9e2c1;
+  --exito-c: #d5f5e2;
+  --exito-btn: #527f18;
+
+  --error-f: #c7564a;
+  --error: #e4756f;
+  --error-c: #e1b2af;
+
+  --precaucion-f: #d4bf47;
+  --precaucion: #e4d26f;
+  --precaucion-c: #f1e7a8;
+
+  --cancelar-f: #b8a9a8;
+  --cancelar: #dccbca;
+  --cancelar-c: #e9dedd;
+
+  --informacion-f: #5b9bd5;
+  --informacion: #85c1e9;
+  --informacion-c: #cfe2f3;
+
+  --neutral-f: #6c757d;
+  --neutral: #adb5bd;
+  --neutral-c: #dee2e6;
+
+  --gris-principal: #b9b4b4;
+  --gris-0: #f8f8f8;
+  --gris-1: #efefef;
+  --gris-2: #e0e0e0;
+  --gris-3: #c0c0c0;
+  --gris-4: #a0a0a0;
+  --gris-5: #808080;
+  --gris-6: #606060;
+  --gris-7: #404040;
+  --gris-8: #202020;
+  --blanco: #ffffff;
+  --negro: #000000;
+}

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loginBackground{
+    background-image: url('./assets/img/LoginBackground.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.focus\:ring-principal_mf:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: #781005
+}
+
+
+.customInputsButtons{
+     border-color: #781005;
+}

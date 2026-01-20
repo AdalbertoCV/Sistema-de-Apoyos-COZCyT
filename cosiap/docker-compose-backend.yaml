@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  cosiap_api:
+    container_name: cosiap_api
+    depends_on:
+      - db-cosiap
+    links:
+      - db-cosiap
+    volumes:
+      - ./cosiap_api:/app
+    build:
+      context: ./cosiap_api
+    ports:
+      - "8000:8000"
+
+  db-cosiap:
+    image: mariadb
+    restart: always
+    container_name: db-cosiap
+    environment:
+      MYSQL_DATABASE: db-cosiap
+      MYSQL_USER: cosiap_user
+      MYSQL_PASSWORD: cosiap_password
+      MYSQL_ROOT_PASSWORD: cosiap_root_password
+    volumes:
+      - db-cosiap:/var/lib/mysql
+    ports:
+      - "3320:3306"
+
+  redis-cosiap:
+    image: redis
+    restart: always
+    container_name: redis-cosiap
+    ports:
+      - "6379:6379"
+
+volumes:
+  db-cosiap:
